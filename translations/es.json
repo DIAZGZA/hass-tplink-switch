@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Monitor de switches de red TP-Link",
+        "description": "Introduce las credenciales del switch de red",
+        "data": {
+          "ip": "Dirección IP",
+          "username": "Nombre de usuario",
+          "password": "Contraseña"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Este dispositivo ya está configurado"
+    },
+    "error": {
+      "auth_error": "No se puede autenticar. Credenciales no válidas",
+      "unknown": "Se ha producido un error inesperado. Consulta los registros para obtener más información"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "port": {
+        "name": "Puerto {port_number}",
+        "state": {
+          "linkdown": "Enlace caído",
+          "10mh": "10 M semidúplex",
+          "10mf": "10 M dúplex completo",
+          "100mh": "100 M semidúplex",
+          "100mf": "100 M dúplex completo",
+          "1000mh": "1000 M semidúplex",
+          "1000mf": "1000 M dúplex completo",
+          "unknown": "Desconocido"
+        }
+      }
+    }
+  }
+}
